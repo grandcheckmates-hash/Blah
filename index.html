@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Door</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" data-view="door">
+      <section class="door-scene" aria-label="Security sliding door">
+        <div class="hall-light" aria-hidden="true"></div>
+        <div class="floor-grid" aria-hidden="true"></div>
+
+        <div class="door-frame">
+          <div class="warning-strip" aria-hidden="true"></div>
+          <div class="door door-left" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="door door-right" aria-hidden="true">
+            <span></span>
+          </div>
+          <button class="entry" type="button" data-entry aria-label="Enter room">
+            <span>ENTRY</span>
+          </button>
+        </div>
+
+        <button class="lock-panel" type="button" data-lock aria-label="Open password lock">
+          <span class="lock-status" data-lock-status>LOCKED</span>
+          <span class="lock-light"></span>
+          <span class="lock-lines"></span>
+        </button>
+      </section>
+
+      <section class="lock-zoom" aria-hidden="true" data-lock-zoom>
+        <div class="modal-backdrop"></div>
+        <button class="close" type="button" data-lock-close aria-label="Close password lock">x</button>
+        <form class="password-console" data-password-form>
+          <div class="console-title">SECURITY OVERRIDE</div>
+          <div class="keypad-engraving">End is just the beginning</div>
+          <label for="password-input">PASSWORD</label>
+          <div class="password-row">
+            <input id="password-input" data-password-input type="password" autocomplete="off" spellcheck="false" />
+            <button type="submit">ENTER</button>
+          </div>
+          <div class="password-feedback" data-password-feedback>Awaiting credentials.</div>
+        </form>
+      </section>
+
+      <section class="control-room" aria-label="Screen control room">
+        <div class="win-banner" data-win-banner>YOU WON, send the code to the gamer master!</div>
+        <div class="room-shell">
+          <div class="room-haze" aria-hidden="true"></div>
+          <div class="wall-cables" aria-hidden="true">
+            <span class="cable-a"></span>
+            <span class="cable-b"></span>
+            <span class="cable-c"></span>
+            <span class="cable-d"></span>
+          </div>
+          <div class="camera" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="screen-wall" data-screen-wall>
+            <button class="screen glitch s1 wide" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s2 live tall" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s3" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen clue-screen hero-monitor" type="button" data-clue-screen aria-label="Clean white screen"></button>
+            <button class="screen glitch s4 live" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s5 dead" type="button" aria-label="Dark broken screen"><span></span></button>
+            <button class="screen glitch s6 wide" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s7 live" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s8" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s9 live wide" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s10" type="button" aria-label="Glitching screen"><span></span></button>
+            <button class="screen glitch s11 dead" type="button" aria-label="Dark broken screen"><span></span></button>
+          </div>
+
+          <div class="table">
+            <div class="desk-shadow" aria-hidden="true"></div>
+            <div class="desk-surface" aria-hidden="true"></div>
+            <div class="desk-front" aria-hidden="true"></div>
+            <div class="desk-leg desk-leg-left" aria-hidden="true"></div>
+            <div class="desk-leg desk-leg-right" aria-hidden="true"></div>
+            <div class="desk-clutter" aria-hidden="true">
+              <span class="paper-one"></span>
+              <span class="paper-two"></span>
+              <span class="loose-wire"></span>
+            </div>
+            <div class="chair" aria-hidden="true">
+              <span class="chair-back"></span>
+              <span class="chair-seat"></span>
+              <span class="chair-stem"></span>
+              <span class="chair-base"></span>
+            </div>
+            <div class="control-deck">
+              <div class="knobs" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <label for="time-code">TIME</label>
+              <input id="time-code" data-time-input inputmode="numeric" autocomplete="off" value="00:00" maxlength="5" />
+              <button class="time-submit" type="button" data-time-submit>SYNC</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen-zoom" aria-hidden="true" data-screen-zoom>
+        <div class="modal-backdrop"></div>
+        <button class="close" type="button" data-screen-close aria-label="Close screen">x</button>
+        <div class="zoomed-screen">
+          <p>Xli Erwiv xs csyv wievgl mw sr mrwxekveq, Caeser +4, In Weekly</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
